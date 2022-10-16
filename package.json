@@ -15,5 +15,13 @@
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
     "request": "^2.88.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roushan-rks/weather-lens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roushan-rks/weather-lens/issues"
+  },
+  "homepage": "https://github.com/roushan-rks/weather-lens#readme"
 }

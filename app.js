@@ -53,7 +53,7 @@ app.post("/request", (req, res) => {
     const val = " https://api.ambeedata.com/latest/by-lat-lng?lat=" + req.body.latitude + "&lng=" + req.body.longitude;
     var option3 = {
         url: val,
-        headers: { 'x-api-key': process.env.API_KEY1, 'Content-type': 'application/json' }
+        headers: { 'x-api-key': '518264e3fdc2f7588f5c6b5496faed0148bf54698743c2f8c52b39511e13cc20', 'Content-type': 'application/json' }
     }
     request(option3, function (err, response, body) {
         if (err) console.log(err);
@@ -176,7 +176,7 @@ app.post("/", function (req, res) {
     else if (state === "Ladakh") { state = "LA"; }
     else { state = "OT"; }
     console.log(state);
-    const uri = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "," + state + ",IND&limit=&appid="+process.env.API_KEY2;
+    const uri = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "," + state + ",IND&limit=&appid="+'8bb03e1983c6d43761b3f2633bb5b8b6';
 
     var options = {
         url: uri
@@ -200,7 +200,7 @@ app.post("/", function (req, res) {
                 const val = " https://api.ambeedata.com/latest/by-lat-lng?lat=" + r[0].lat + "&lng=" + r[0].lon;
                 var option3 = {
                     url: val,
-                    headers: { 'x-api-key': process.env.API_KEY1, 'Content-type': 'application/json' }
+                    headers: { 'x-api-key': '518264e3fdc2f7588f5c6b5496faed0148bf54698743c2f8c52b39511e13cc20', 'Content-type': 'application/json' }
                 }
                 request(option3, function (err, response, body) {
                     if (err) console.log(err);
@@ -220,7 +220,7 @@ app.post("/", function (req, res) {
                         aqi = poll.stations[0].AQI;
                     }
                 })
-                const uri = "https://api.openweathermap.org/data/2.5/weather?lat=" + r[0].lat + "&lon=" + r[0].lon + "&appid="+process.env.API_KEY2;
+                const uri = "https://api.openweathermap.org/data/2.5/weather?lat=" + r[0].lat + "&lon=" + r[0].lon + "&appid="+'8bb03e1983c6d43761b3f2633bb5b8b6';
                 var option2 = {
 
                     url: uri
