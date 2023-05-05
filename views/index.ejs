@@ -209,7 +209,7 @@
 
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-12 col-lg-12 col-xl-12 margin1">
+            <div class="col-md-12 col-lg-12 col-xl-6 margin1">
 
                 <div class="card margin2" style="border-radius: 10px;">
                     <div class="bg-image ripple" data-mdb-ripple-color="light"
@@ -218,29 +218,13 @@
 
                         <br>
                         <div class="mask" style="background-color:    #083358  ">
-                            <!-- <div class="d-flex justify-content-between p-4">
-                                <a href="#!" class="text-white"><i class="fas fa-chevron-left fa-lg"></i></a>
-                                <a href="#!" class="text-white"><i class="fas fa-cog fa-lg"></i></a>
-                            </div> -->
+                           
                             <div class="text-center text-white">
-                                <div>
-                                    <p>(Beta version) </p>
-                                    <p>(Please Refresh Page 2-3 Times After Search For Better Result)</p>
-                                    <p> <button class="location-button" style="width: 237px;" id="find-me"
-                                            type="submit">Use Current
-                                            location</button><br />
-
-
-                                    <p id="status"></p>
-                                    <a id="map-link" target="_blank" name="location"></a></p>
-                                </div>
-                                <div>
-                                    <p style="margin:1px auto 1px auto" ;>Or</p>
-                                </div>
+                              
                                 <div class="form">
                                     <form action="/" method="post">
                                         <div style="text-align: center;">
-                                            <!-- <label for="lang">State</label> -->
+                                            
 
                                             <select name="state" id="state" style="text-align: center; width: 237px;">
                                                 <option name="state" value="Andhra Pradesh">State</option>
@@ -291,7 +275,7 @@
 
                                         </div>
                                         <div>
-                                            <!-- <label for="lang">City</label> -->
+                                            
                                             <input style="width: 237px; text-align: center;" class="city" type="text"
                                                 name="city" id="" placeholder="City Name">
                                         </div>
@@ -302,8 +286,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                <!-- <p class="h5 mb-4">Detroit, US</p>
-                                <p class="display-2"><strong>20°C</strong> </p> -->
+                               
                             </div>
                         </div>
                     </div>
@@ -325,20 +308,14 @@
                     <div class="bg-image ripple" data-mdb-ripple-color="light"
                         style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
                         <h1 style="text-align: center;"> Weather Report</h1>
-                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw2.webp"
-                            class="w-100" /> -->
+                        
                         <div class="mask" style="background-color:  #083358">
-                            <!-- <div class="d-flex justify-content-between p-4">
-                                <a href="#!" class="text-white"><i class="fas fa-chevron-left fa-lg"></i></a>
-                                <a href="#!" class="text-white"><i class="fas fa-cog fa-lg"></i></a>
-                            </div> -->
+                            
                             <div class="text-center text-white">
                                 <p class="h3 mb-4">
                                     <%=day%>
                                 </p>
-                                <!-- <p class="h3 mb-4"><%=date%> -->
-                                <!-- <%=month%> -->
-                                <!-- <%=year%></p> -->
+                                
                                 <p class="h3 mb-4">
                                     <%=desc%>
                                 </p>
@@ -412,207 +389,14 @@
 
 
 
-            <div class="col-md-12 col-lg-12 col-xl-6 margin1">
-
-                <div class="card" style="border-radius: 10px;background-color: #083358;">
-                    <div class="bg-image ripple" data-mdb-ripple-color="light"
-                        style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-                        <h1 style="text-align: center;">Pollution Report</h1>
-                        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw2.webp"
-                            class="w-100" /> -->
-                        <div class="mask" style=" border-radius: 10px;background-color: #083358;">
-                            <div class="d-flex justify-content-between p-4">
-                                <a href="#!" class="text-white"><i class="fas fa-chevron-left fa-lg"></i></a>
-                                <a href="#!" class="text-white"><i class="fas fa-cog fa-lg"></i></a>
-                            </div>
-                            <div class="text-center text-white">
-                                <p class="h5 mb-4">
-                                    <%=state%>
-                                </p>
-                                <p class="h5 mb-4">
-                                    <%=placename%>, IN
-                                </p>
-                                <p id="aqi" class="h3 mb-4">Air Quality Index <%=aqi%>
-                                </p>
-                                <!-- <button id="aqi"  class="h3 mb-4"></button> -->
-                                <p class="fw-normal">Pollution Status <strong id="title" target="_blank"
-                                        style="background-color: rgb(47, 172, 231);"></strong> </p>
-                                <p id="detail" target="_blank"></p>
-
-                                <p class="display-2"><strong></strong> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body p-4 text-center">
-                        <a href="#!" class="text-body"><i class="fas fa-chevron-up fa-lg mb-4"></i></a>
-                        <div class="d-flex justify-content-between mb-3">
-                            <p class="h5 fw-normal">Carbon monoxide</p>
-                            <p class="h5 fw-normal"><i class="fas fa-sun pe-2"></i>
-                                <%=co%> ppm
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-between" style="color: #aaa;">
-                            <p class="h5 fw-normal">Nitrogen dioxide</p>
-                            <p class="h5 fw-normal"><i class="fas fa-cloud pe-2"></i>
-                                <%=no2%> ppb
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-between" style="color: #aaa;">
-                            <p class="h5 fw-normal"> OZONE </p>
-                            <p class="h5 fw-normal"><i class="fas fa-cloud pe-2"></i>
-                                <%=ozone%> ppb
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-between" style="color: #aaa;">
-                            <p class="h5 fw-normal">Particulate matter < 10um</p>
-                                    <p class="h5 fw-normal"><i class="fas fa-cloud pe-2"></i>
-                                        <%= pm10%> ug/m3
-                                    </p>
-                        </div>
-                        <div class="d-flex justify-content-between" style="color: #aaa;">
-                            <p class="h5 fw-normal">Particulate matter < 25um</p>
-                                    <p class="h5 fw-normal"><i class="fas fa-cloud pe-2"></i>
-                                        <%= pm25%> ug/m3
-                                    </p>
-                        </div>
-                        <div class="d-flex justify-content-between" style="color: #aaa;">
-                            <p class="h5 fw-normal"> Sulphur dioxide</p>
-                            <p class="h5 fw-normal"><i class="fas fa-cloud pe-2"></i>
-                                <%=so2%> ppb
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    
-   
-    <!-- <div class="outer">
-        <footer>
             
-            <div class="footer-bottom">
-                <p>copyright ©<%=year%> <a href="#">developer</a> </p>
-                <div class="footer-menu">
-                    <ul class="f-menu">
-                        <li><a href="https://www.linkedin.com/in/roushan-singh-0263681b7/">Linkedin</a></li>
-                        <li><a href="">twitter</a></li>
-                        <li><a href="">Contact</a></li>
-
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
-    </div> -->
+     
+   
+ 
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        </script>
-
-
-
-
-
-
-
-
-    <script>
-        var i = 3;
-        while (i--) {
-            window.onload = function () {
-                if (!window.location.hash) {
-                    window.location = window.location + '#loaded';
-                    window.location.reload();
-                }
-            }
-        }
-
-        var api = document.getElementById("aqi").textContent;
-        api = api.substring(17);
-        if (api >= 0 && api <= 50) {
-            document.getElementById("title").innerHTML = "Good";
-            document.getElementById("detail").innerHTML = "Minimal Impact";
-        }
-        else if (api >= 51 && api <= 100) {
-            document.getElementById("title").innerHTML = " Satisfactory";
-            document.getElementById("detail").innerHTML = "May cause minor breathing difficulties in sensitive people.";
-        }
-        else if (api >= 101 && api <= 200) {
-            document.getElementById("title").innerHTML = " Moderately polluted";
-            document.getElementById("detail").innerHTML = "May cause breathing difficulties in people with lung disease like asthma, and discomfort to people with heart disease, children and older adults.";
-        }
-        else if (api >= 201 && api <= 300) {
-            document.getElementById("title").innerHTML = " Poor";
-            document.getElementById("detail").innerHTML = "May cause breathing difficulties in people on prolonged exposure, and discomfort to people with heart disease";
-        }
-        else if (api >= 301 && api <= 400) {
-            document.getElementById("title").innerHTML = " Very Poor";
-            document.getElementById("detail").innerHTML = "May cause respiratory illness in people on prolonged exposure. Effect may be more pronounced in people with lung and heart diseases.";
-        }
-        else {
-            document.getElementById("title").innerHTML = " Severe";
-            document.getElementById("detail").innerHTML = "May cause respiratory issues in healthy people, and serious health issues in people with lung/heart disease. Difficulties may be experienced even during light physical activity.";
-        }
-
-
-
-        function geoFindMe() {
-
-            const status = document.querySelector('#status');
-            const mapLink = document.querySelector('#map-link');
-
-            mapLink.href = '';
-            mapLink.textContent = '';
-
-            function success(position) {
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
-
-                $.post("/request",
-                    {
-                        latitude: latitude,
-                        longitude: longitude
-                    },
-                    function (data, status) {
-                        console.log(data);
-                        location.reload(true);
-                    });
-                $.post("/request",
-                    {
-                        latitude: latitude,
-                        longitude: longitude
-                    },
-                    function (data, status) {
-                        console.log(data);
-                        location.reload(true);
-                    });
-                status.textContent = '';
-                mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
-                mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
-            }
-
-            function error() {
-                status.textContent = 'Unable to retrieve your location';
-            }
-
-            if (!navigator.geolocation) {
-                status.textContent = 'Geolocation is not supported by your browser';
-            } else {
-                status.textContent = 'Locating…';
-                navigator.geolocation.getCurrentPosition(success, error);
-
-            }
-
-        }
-        document.querySelector('#find-me').addEventListener('click', geoFindMe);
-
-
-    </script>
+   
 </body>
 
 </html>
