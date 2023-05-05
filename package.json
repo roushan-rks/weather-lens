@@ -15,6 +15,9 @@
     "path": "^0.12.7",
     "request": "^2.88.2"
   },
+  "engines": {
+    "node": ">=16.9"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roushan-rks/weather-lens.git"
