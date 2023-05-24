@@ -86,7 +86,7 @@ app.post("/", function (req, res) {
     else if (state === "Ladakh") { state = "LA"; }
     else { state = "OT"; }
     console.log(state);
-    const uri = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "," + state + ",IND&limit=&appid="+'716a86452b0845c34444fa0b238500c8';
+    const uri = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "," + state + ",IND&limit=&appid="+process.env.API_KEY;
 
     var options = {
         url: uri
@@ -108,7 +108,7 @@ app.post("/", function (req, res) {
 
             else {
                
-                const uri = "https://api.openweathermap.org/data/2.5/weather?lat=" + r[0].lat + "&lon=" + r[0].lon + "&appid="+'716a86452b0845c34444fa0b238500c8';
+                const uri = "https://api.openweathermap.org/data/2.5/weather?lat=" + r[0].lat + "&lon=" + r[0].lon + "&appid="+process.env.API_KEY;
                 var option2 = {
 
                     url: uri
